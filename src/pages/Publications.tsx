@@ -26,19 +26,7 @@ export function Publications() {
 
   return (
     <>
-      <h1 className="font-serif text-4xl md:text-5xl font-light mb-4">Publications</h1>
-      <p className="text-ink-muted font-light mb-16 max-w-2xl">
-        Synced daily from{' '}
-        <a
-          href="https://orcid.org/0000-0002-6169-9615"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="underline underline-offset-4 hover:text-accent"
-        >
-          ORCID
-        </a>
-        .
-      </p>
+      <h1 className="font-serif text-4xl md:text-5xl font-light mb-16">Publications</h1>
 
       {publications.length === 0 && (
         <p className="text-ink-muted italic">No publications yet — check back soon.</p>
