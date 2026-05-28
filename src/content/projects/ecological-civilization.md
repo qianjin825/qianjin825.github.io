@@ -11,4 +11,4 @@ It traces the discursive and material work that builds an apparently coherent na
 
 ## Related publications
 
-- *Ecological Civilization in the making: the 'construction' of China's climate-forestry nexus* (2022)
+- [*Ecological Civilization in the making: the 'construction' of China's climate-forestry nexus*](https://doi.org/10.1080/23251042.2022.2124623) — *Environmental Sociology* (2022)

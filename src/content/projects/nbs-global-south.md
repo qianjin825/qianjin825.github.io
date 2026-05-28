@@ -11,4 +11,4 @@ It asks who benefits, who bears the costs, and what gets lost when ecological co
 
 ## Related publications
 
-- *China's nature-based solutions in the Global South: Evidence from Asia, Africa, and Latin America* (2024)
+- [*China's nature-based solutions in the Global South: Evidence from Asia, Africa, and Latin America*](https://doi.org/10.1016/j.gloenvcha.2024.102842) — *Global Environmental Change* (2024)

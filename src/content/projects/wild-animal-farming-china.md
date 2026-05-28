@@ -11,6 +11,6 @@ Through ethnographic fieldwork on forest frog farming and analysis of national w
 
 ## Related publications
 
-- *More-than-human practices in wild animal farming: The case of China's forest frogs* (2026)
-- *Governing food systems to conserve China's endangered wild animals* (2025)
-- *Perceptions of COVID-19 origins and China's wildlife policy reforms* (2023)
+- [*More-than-human practices in wild animal farming: The case of China's forest frogs*](https://doi.org/10.1016/j.jrurstud.2026.104172) — *Journal of Rural Studies* (2026)
+- [*Governing food systems to conserve China's endangered wild animals*](https://doi.org/10.1016/j.oneear.2025.101276) — *One Earth* (2025)
+- [*Perceptions of COVID-19 origins and China's wildlife policy reforms*](https://doi.org/10.1016/j.gecco.2023.e02463) — *Global Ecology and Conservation* (2023)
