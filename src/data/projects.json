@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "wild-animal-farming-china",
+    "title": "Wild Animal Farming & More-than-Human Governance in China",
+    "summary": "Ethnographic and policy work on China's wild animal farming sector, the more-than-human practices that sustain it, and the post-COVID reforms reshaping how the state sorts wildlife from livestock.",
+    "tags": ["wildlife", "China", "ethnography", "governance"],
+    "date": "2026-01-01",
+    "featured": true
+  },
+  {
+    "slug": "ecological-civilization",
+    "title": "Ecological Civilization & the Climate-Forestry Nexus",
+    "summary": "Investigates how China's \"ecological civilization\" frame is constructed at the intersection of climate policy and forestry governance, and how it translates ecological values into administrative categories.",
+    "tags": ["climate", "China", "discourse", "forestry"],
+    "date": "2024-06-01",
+    "featured": true
+  },
+  {
+    "slug": "nbs-global-south",
+    "title": "Nature-Based Solutions in the Global South",
+    "summary": "Follows the export of \"nature-based solutions\" from international policy frameworks into specific landscapes across Asia, Africa, and Latin America, with a focus on how Chinese actors shape that travel.",
+    "tags": ["Global South", "policy", "China", "NbS"],
+    "date": "2024-01-01",
+    "featured": true
+  }
+]
