@@ -7,7 +7,7 @@ summary: Ethnographic and policy work on China's wild animal farming sector and 
 
 This project examines China's wild animal farming sector — the practices, regulatory categories, and more-than-human relations that sustain it — and the post-COVID policy reforms that are reshaping it.
 
-Through ethnographic fieldwork on forest frog farming and analysis of national wildlife governance, the project asks how state and market actors stabilize the line between "wildlife" and "livestock," and what that line costs the animals it sorts.
+Through ethnographic fieldwork on China's amphibian and reptile industry and analysis of national wildlife governance, the project asks how state and market actors stabilize the line between "wildlife" and "livestock," and what that line costs the animals it sorts.
 
 ## Related publications
 
