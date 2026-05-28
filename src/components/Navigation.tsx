@@ -2,7 +2,6 @@ import { NavLink, Link } from 'react-router-dom';
 import profile from '../data/profile.json';
 
 const navItems = [
-  { to: '/about', label: 'About' },
   { to: '/research', label: 'Research' },
   { to: '/publications', label: 'Publications' },
   // { to: '/cv', label: 'CV' }, // hidden — un-comment when CV is ready

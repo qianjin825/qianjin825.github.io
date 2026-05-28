@@ -1,6 +1,5 @@
-import { createBrowserRouter } from 'react-router-dom';
+import { createBrowserRouter, Navigate } from 'react-router-dom';
 import { Layout } from './components/Layout';
-import { Home } from './pages/Home';
 import { About } from './pages/About';
 import { Research } from './pages/Research';
 import { ProjectDetail } from './pages/ProjectDetail';
@@ -11,13 +10,13 @@ export const router = createBrowserRouter([
   {
     element: <Layout />,
     children: [
-      { path: '/', element: <Home /> },
-      { path: '/about', element: <About /> },
+      { path: '/', element: <About /> },
+      { path: '/about', element: <Navigate to="/" replace /> },
       { path: '/research', element: <Research /> },
       { path: '/research/:slug', element: <ProjectDetail /> },
       { path: '/publications', element: <Publications /> },
       { path: '/cv', element: <CV /> },
-      { path: '*', element: <Home /> },
+      { path: '*', element: <About /> },
     ],
   },
 ]);
