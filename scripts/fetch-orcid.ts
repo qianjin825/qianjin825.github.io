@@ -38,6 +38,35 @@ async function orcidGet(path: string): Promise<any> {
   return res.json();
 }
 
+/**
+ * Fetch authoritative author list from Crossref by DOI.
+ * Crossref is the source of truth for published works (ORCID contributors are
+ * frequently incomplete because authors don't always add coauthors).
+ * Returns null on any failure — caller should fall back to ORCID data.
+ */
+async function crossrefAuthors(doi: string): Promise<string[] | null> {
+  try {
+    const res = await fetch(
+      `https://api.crossref.org/works/${encodeURIComponent(doi)}?mailto=qianjin825@gmail.com`,
+      { headers: { Accept: 'application/json' } }
+    );
+    if (!res.ok) return null;
+    const data = await res.json();
+    const list: any[] = data?.message?.author ?? [];
+    const authors = list
+      .map((a: any) => {
+        const given = (a?.given ?? '').trim();
+        const family = (a?.family ?? '').trim();
+        const name = [given, family].filter(Boolean).join(' ');
+        return name || null;
+      })
+      .filter((s: string | null): s is string => Boolean(s));
+    return authors.length > 0 ? authors : null;
+  } catch {
+    return null;
+  }
+}
+
 function mapType(t: string | undefined): Publication['type'] {
   switch (t) {
     case 'journal-article':
@@ -92,9 +121,17 @@ async function main() {
       const year: number | undefined = Number(w?.['publication-date']?.year?.value);
       if (!title || !year || Number.isNaN(year)) continue;
       const doi = extractDoi(w);
+      const orcidAuthors = extractAuthors(w);
+      const crossrefAuth = doi ? await crossrefAuthors(doi) : null;
+      const authors = crossrefAuth ?? orcidAuthors;
+      if (doi && crossrefAuth && crossrefAuth.length !== orcidAuthors.length) {
+        console.log(
+          `[fetch-orcid] author list for ${doi}: ORCID had ${orcidAuthors.length}, Crossref returned ${crossrefAuth.length} (using Crossref)`
+        );
+      }
       results.push({
         title,
-        authors: extractAuthors(w),
+        authors,
         year,
         venue: w?.['journal-title']?.value ?? undefined,
         doi,

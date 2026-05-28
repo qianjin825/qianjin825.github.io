@@ -1,8 +1,19 @@
 import publicationsData from '../data/publications.json';
+import extraData from '../data/publications.extra.json';
 import type { Publication } from '../data/types';
 import { PublicationItem } from '../components/PublicationItem';
 
-const publications = publicationsData as Publication[];
+// Merge auto-fetched (ORCID + Crossref) with manual extras; dedup by DOI.
+const seen = new Set<string>();
+const publications: Publication[] = [
+  ...(publicationsData as Publication[]),
+  ...(extraData as Publication[]),
+].filter((p) => {
+  const key = p.doi ?? p.title;
+  if (seen.has(key)) return false;
+  seen.add(key);
+  return true;
+});
 
 export function Publications() {
   const byYear: Record<number, Publication[]> = {};

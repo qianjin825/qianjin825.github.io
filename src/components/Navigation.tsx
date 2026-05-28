@@ -5,7 +5,7 @@ const navItems = [
   { to: '/about', label: 'About' },
   { to: '/research', label: 'Research' },
   { to: '/publications', label: 'Publications' },
-  { to: '/cv', label: 'CV' },
+  // { to: '/cv', label: 'CV' }, // hidden — un-comment when CV is ready
 ];
 
 export function Navigation() {

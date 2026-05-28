@@ -21,6 +21,7 @@
   },
   "links": [
     { "label": "ORCID", "href": "https://orcid.org/0000-0002-6169-9615" },
+    { "label": "Scholar", "href": "https://scholar.google.com/citations?user=-SJQRCAAAAAJ&hl=en" },
     { "label": "GitHub", "href": "https://github.com/qianjin825" },
     { "label": "Email", "href": "mailto:jin.qian@wur.nl" }
   ]

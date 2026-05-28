@@ -1,4 +1,4 @@
-import { Mail, Github, BookOpen, Mic } from 'lucide-react';
+import { Mail, Github, BookOpen, GraduationCap, Mic } from 'lucide-react';
 import profile from '../data/profile.json';
 
 const iconFor = (label: string) => {
@@ -6,6 +6,7 @@ const iconFor = (label: string) => {
   if (l.includes('email') || l.includes('mail')) return <Mail size={16} />;
   if (l.includes('github')) return <Github size={16} />;
   if (l.includes('orcid')) return <BookOpen size={16} />;
+  if (l.includes('scholar')) return <GraduationCap size={16} />;
   return null;
 };
 
