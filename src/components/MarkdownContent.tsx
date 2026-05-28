@@ -36,6 +36,7 @@ export function MarkdownContent({ children }: { children: string }) {
               {children}
             </blockquote>
           ),
+          hr: () => <hr className="border-t border-ink/10 my-12" />,
         }}
       >
         {children}
